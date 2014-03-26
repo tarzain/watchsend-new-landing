@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>Watchsend UX Report</title>
+<!--rgb(87,157,132)-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/report.css">
+<link rel="stylesheet" type="text/css" href="css/webflow.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-4 w-clearfix brand-column">
+          <img class="logo" src="images/Screenshot%202014-03-24%2020.18.17.png" width="180" alt="5330f58576f3d9897800011e_Screenshot%202014-03-24%2020.18.17.png">
+        </div>
+        <nav class="w-col w-col-8 nav-column"><a class="nav-link" href="#benefits">Features &amp;&nbsp;benfits</a><a class="nav-link sign-up" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">Sign Up</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--
+  <div class="row">
+    <nav class="navbar navbar-dark navbar-fixed-top" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="./index.html" class="navbar-brand">
+              <img class="logo" src="https://dl.dropboxusercontent.com/u/792157/watchsend/new-landing/newlogo.png"></img>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/install">Install</a></li>
+              <li><a href="/dashboard.html">Dashboard</a></li>
+              <li><a class="nav-link sign-up" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="jumbotron app_name_header">
+      <div class="container">
+        <div class="col-md-8">
+          <div class="header">
+            6 issues found in <span class="app_name">GSDFaster</span>
+          </div>
+        </div>
+        <div class="app_name_header_image"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id="issues">
+      <div class="container">
+        <div class="panel-group accordion-caret" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div class="progress-striped">
+                  <div class="thermo">
+                    <div class="hot progress-bar-danger">
+                      <div class="temp-hot">
+                        80 &deg;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 pull-right"></div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="issue-title">Back and Forth between Process and Collect</a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Summary: </strong>
+                  Users go back and forth between process and collect views to add many items
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Evidence: </strong>
+                  <p class="summary">the top cluster exhibits this behavior</p>
+                  <table>
+                  <tr class="cluster" style="background: hsla(-480.0, 33%, 72%, 0.4);">
+                    <td>
+                      <p>
+                        <a href="/sessions/70374">
+                          2 months
+                          ago, device 110532
+                          &nbsp;&nbsp;
+                        </a>
+                      </p>
+                    </td>
+                    <td style="padding: 15px;">
+                      <a href="/screens/312">
+                        <span class="tag screen-tag">Process Screen</span>
+                      </a>
+                      <a href="/events/3470">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/306">
+                        <span class="tag screen-tag">StuffProcess</span>
+                      </a>
+                      <a href="/events/3224">
+                        <span class="tag event-tag"> Done button pressed</span>
+                      </a>
+                      <a href="/screens/305">
+                        <span class="tag screen-tag">Process</span>
+                      </a>
+                      <a href="/events/3209">
+                        <span class="tag event-tag">UIButton pressed</span>
+                      </a>
+                      <a href="/screens/303">
+                        <span class="tag screen-tag">Collect</span>
+                      </a>
+                      <a href="/events/3219">
+                        <span class="tag event-tag">UIKeyboardLayoutStar pressed x 33</span>
+                      </a>
+                      <a href="/events/3191">
+                        <span class="tag event-tag">UITextView pressed</span>
+                      </a>
+                      <a href="/events/3219">
+                        <span class="tag event-tag">UIKeyboardLayoutStar pressed x 9</span>
+                      </a>
+                      <a href="/events/3192">
+                        <span class="tag event-tag">Save button pressed</span>
+                      </a>
+                      <a href="/screens/305">
+                        <span class="tag screen-tag">Process</span>
+                      </a>
+                      <a href="/events/3209">
+                        <span class="tag event-tag">UIButton pressed</span>
+                      </a>
+                      <a href="/screens/303">
+                        <span class="tag screen-tag">Collect</span>
+                      </a>
+                      <a href="/events/3219">
+                        <span class="tag event-tag">UIKeyboardLayoutStar pressed x 32</span>
+                      </a>
+                      <a href="/events/3192">
+                        <span class="tag event-tag">Save button pressed</span>
+                      </a>
+                      <a href="/screens/305">
+                        <span class="tag screen-tag">Process</span>
+                      </a>
+                      <a href="/events/3194">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/306">
+                        <span class="tag screen-tag">StuffProcess</span>
+                      </a>
+                      <a href="/events/3210">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/311">
+                        <span class="tag screen-tag">StuffProcessBucket</span>
+                      </a>
+                      <a href="/events/3213">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/306">
+                        <span class="tag screen-tag">StuffProcess</span>
+                      </a>
+                      <a href="/events/3214">
+                        <span class="tag event-tag"> Save button pressed</span>
+                      </a>
+                      <a href="/screens/305">
+                        <span class="tag screen-tag">Process</span>
+                      </a>
+                      <a href="/events/3194">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/306">
+                        <span class="tag screen-tag">StuffProcess</span>
+                      </a>
+                      <a href="/events/3210">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/311">
+                        <span class="tag screen-tag">StuffProcessBucket</span>
+                      </a>
+                      <a href="/events/3213">
+                        <span class="tag event-tag">UITableViewCellContentView pressed</span>
+                      </a>
+                      <a href="/screens/306">
+                        <span class="tag screen-tag">StuffProcess</span>
+                      </a>
+                      <a href="/screens/305">
+                        <span class="tag screen-tag">Process</span>
+                      </a>
+                    </td>
+                    <td>
+                      <div style="background: white; width: 25px; height: 25px; border-radius: 25px; margin-left: 5px; text-align: center; margin-top: 5px;">
+                        <p style="position:relative; top: 8%;">126</p>
+                      </div>
+                    </td>
+                  </tr>
+                  </table>
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Recommendations (experimental): </strong>
+                  The collect view should permit the addition of more than one item at a time
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div class="progress-striped">
+                  <div class="thermo">
+                    <div class="hot progress-bar-danger">
+                      <div class="temp-hot">
+                        60 &deg;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 pull-right"></div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="issue-title">Users adding multiple items</a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Summary: </strong>
+                  Most users initially open the app to add items, not to manipulate buckets.
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Evidence: </strong>
+                  <p class="summary">the second most frequent cluster exhibits this behavior</p>
+                  <table>
+                    <tr class="cluster" style="background: hsla(-475.0, 33%, 72%, 0.4);">
+                      <td>
+                        <p>
+                          <a href="/sessions/67862">
+                            2 months
+                            ago, device 110026
+                            &nbsp;&nbsp;
+                          </a>
+                        </p>
+                      </td>
+                      <td>
+                        <a href="/screens/312">
+                          <span class="tag screen-tag">Collect</span>
+                        </a>
+                        <a href="/events/3218">
+                          <span class="tag event-tag">UIButton pressed</span>
+                        </a>
+                        <a href="/screens/303">
+                          <span class="tag screen-tag">Collect</span>
+                        </a>
+                        <a href="/events/3219">
+                          <span class="tag event-tag">UIKeyboardLayoutStar pressed x 22</span>
+                        </a>
+                        <a href="/screens/305">
+                          <span class="tag screen-tag">Process</span>
+                        </a>
+                      </td>
+                      <td>
+                        <div style="background: white; width: 25px; height: 25px; border-radius: 25px; margin-left: 5px; text-align: center; margin-top: 5px;">
+                          <p style="position:relative; top: 8%;">125</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <p class="summary">The Collect screen is more than twice as popular as the process screen</p>
+                  <table class="table" style="width:120px;">
+                    <tbody>
+                      <tr class="session" style="background-color: rgba(0,0,100,0.5);">
+                        <td>Collect: 754</td>
+                      </tr>
+                      <tr class="session" style="background-color: rgba(0,0,100,0.24336870026525198)">
+                        <td>Process: 367</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Recommendations (experimental): </strong>
+                  The default view in the app should therefore be to add items (Collect)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div class="progress-striped">
+                  <div class="thermo">
+                    <div class="hot progress-bar-warning">
+                      <div class="temp-warning">
+                        40 &deg;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 pull-right"></div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="issue-title">Help screen is popular</a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <p class="summary"><strong>Summary: </strong>
+                Help screen is extraordinarily popular</p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Evidence: </strong>
+                  <code>12% of all sessions</code> include navigating to the help screen
+                </p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Recommendations (experimental): </strong>
+                  Guided tutorial/mandatory introduction to inform users of GTD process
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div class="progress-striped">
+                  <div class="thermo">
+                    <div class="hot progress-bar-warning">
+                      <div class="temp-warning">
+                        40 &deg;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 pull-right"></div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="issue-title">Collect view is confusing</a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Summary: </strong>Users are confused by the collect screen</p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Evidence: </strong>Back button is the most frequent action on the collect screen at <code>37%</code></p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Recommendation (experimental): </strong>Inform users of GTD process of collecting thoughts before processing</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div class="progress-striped">
+                  <div class="thermo">
+                    <div class="hot progress-bar-warning">
+                      <div class="temp-warning">
+                        40 &deg;
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 pull-right"></div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="issue-title">Done button is confusing</a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Summary: </strong>The "Done" button is confusing. Users may be uncertain of the implications of pressing done</p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Evidence: </strong>There are <code>0</code> instances of the user pressing the Done button in the <code>top 5 clusters</code></p>
+              </div>
+              <div class="panel-body">
+                <p class="summary">
+                  <strong>Recommendation (experimental): </strong>
+                  <ul>
+                    <li class="summary">Display progress for each task in sequence of collect->bucket->process as one navigates the application</li>
+                    <li class="summary">Display an alert and/or describe what done does in the UI.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="d3.min.js"></script>
+<script type="text/javascript" src="report.js"></script>
+</html>
