@@ -1,6 +1,10 @@
 body{
    /* margin-top: 80px !important; */
 }
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .node {
   stroke: #fff;
   stroke-width: 1.5px;
@@ -78,7 +82,7 @@ img.logo{
   margin-right: 10px;
 }
 .app_name{
-  text-decoration: underline;
+  font-weight: bold;
 }
 a.issue-title:hover{
   text-decoration: underline;
