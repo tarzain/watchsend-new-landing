@@ -36,20 +36,24 @@
   </script>
 
   <script type='text/javascript'>
-  
-  // global
-  fb = new Firebase('https://watchsend-email.firebaseIO.com/');
-  list = fb.child(emails).child('list');
+
+  function getUrlVar(key){
+    var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search); 
+    return result && unescape(result[1]) || ""; 
+  }
 
   $(function() {
-    $('form').submit(function(e) {
-      list.push({name: $('input').val()});
-      
-      $('input').val("Thanks! We'll email you right away!");
-      e.preventDefault();
-      return false;
-    });
+    if(getUrlVar("submitted")==="yes"){
+      $(".alert-bar").show();
+    }
+    //Show modal box
+    $('#openModal').click(
+      function(){
+        $('.hiddenForm').toggleClass("shown");
+      }
+    );
   });
+
   </script>
 </head>
 <body>
@@ -57,24 +61,38 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4 w-clearfix brand-column">
-          <img class="logo" src="images/Screenshot%202014-03-24%2020.18.17.png" width="180" alt="5330f58576f3d9897800011e_Screenshot%202014-03-24%2020.18.17.png">
+          <img class="logo" src="images/Screenshot%202014-03-24%2020.18.17.png" width="180" alt="logo">
         </div>
-        <nav class="w-col w-col-8 nav-column"><a class="nav-link" href="#benefits">Features &amp;&nbsp;benEfits</a><a class="nav-link sign-up" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">Sign Up</a>
+        <nav class="w-col w-col-8 nav-column">
+          <a class="nav-link" href="#benefits">Features &amp;&nbsp;benefits</a>
+          <a class="nav-link sign-up" onclick="$('.hiddenForm').toggleClass('shown');">Sign Up</a>
         </nav>
       </div>
     </div>
   </header>
-  <div class="section hero">
+  <div class="alert-bar">Thanks! We'll be in touch.</div>
+  <div class="section hero" id="header">
     <div class="w-container">
       <h1 class="hero-heading">Your app's users are struggling</h1>
       <p class="hero-subhead">We will tell you why and how to fix it</p>
       <div class="button-group">
         <div class="signup_button_group">
-          <p class="signup_button_header">contact us to</p><a class="button sign-up top-signup-button" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">get started</a>
+          <p class="signup_button_header">contact us to</p>
+          <a class="button sign-up top-signup-button" id="openModal">get started
+          
+        </a>
         </div><a class="button" href="sample-report.html" target="_blank">view A report</a>
       </div>
+      <div class="hiddenForm">
+        <form action="//forms.brace.io/zain@watchsend.com" method="POST">
+          <input type="hidden" name="_next" value="//new.watchsend.com/" />
+          <h1 class="form-heading">We'll send you an email right away</h3>
+          <input class="w-input" name="_replyto" type="email" placeholder="Enter your email" maxlength="150">
+          <input class="w-button" type="submit" value="Send">
+        </form>
+      </div>
       <a class="w-inline-block" href="sample-report.html" target="_blank">
-        <img src="images/Screenshot%202014-03-24%2022.34.01.png" width="940" alt="5331155fd4f322ab0800028c_Screenshot%202014-03-24%2022.34.01.png">
+        <img src="images/samplereportscreen.png" width="940" alt="sample report screenshot">
       </a>
     </div>
   </div>
@@ -190,7 +208,7 @@
       <p class="section-subtitle">We’ll identify poor user experiences and give you recommendations to fix them.</p>
       <div class="w-row">
         <div class="w-col w-col-4 w-col-small-4"></div>
-        <div class="w-col w-col-4 w-col-small-4"><a class="button sign-up" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">Get started</a>
+        <div class="w-col w-col-4 w-col-small-4"><a class="button sign-up" onclick="$('.hiddenForm').toggleClass('shown');" href="#header">Get started</a>
         </div>
         <div class="w-col w-col-4 w-col-small-4"></div>
       </div>
@@ -223,5 +241,6 @@
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
+
 </body>
 </html>
