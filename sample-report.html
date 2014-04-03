@@ -68,7 +68,7 @@
       </div>
     </div>
   </header>
-  <div class="section hero">
+  <div class="section hero" id="header">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4">
@@ -102,6 +102,19 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="hiddenForm">
+      <form action="//forms.brace.io/zain@watchsend.com" method="POST">
+        <input type="hidden" name="_next" value="//new.watchsend.com/" />
+        <h1 class="form-heading">We'll send you an email right away</h3>
+        <input class="w-input" name="_replyto" type="email" placeholder="Enter your email" maxlength="150">
+        <input class="w-button" type="submit" value="Send">
+      </form>
+    </div>
+      
+
     <div class="w-container">
       <a class="w-inline-block" href="#report">
         <img class="arrow" src="images/1396413914_icon-ios7-arrow-down.svg" height="50" alt="533b4fd27d50d3226300035e_1396413914_icon-ios7-arrow-down.svg">
@@ -269,7 +282,7 @@
       <p class="section-subtitle">We’ll identify poor user experiences and give you recommendations to fix them.</p>
       <div class="w-row">
         <div class="w-col w-col-4 w-col-small-4"></div>
-        <div class="w-col w-col-4 w-col-small-4"><a class="button sign-up" href="mailto:team@watchsend.com?subject=Tell%20me%20more%20about%20Watchsend" target="_blank">Get started</a>
+        <div class="w-col w-col-4 w-col-small-4"><a class="button sign-up" onclick="$('.hiddenForm').toggleClass('shown', true);" href="#header">Get started</a>
         </div>
         <div class="w-col w-col-4 w-col-small-4"></div>
       </div>
